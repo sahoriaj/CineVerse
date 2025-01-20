@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
-        /* Reset all margins, padding, and border for the body and all elements */
+        /* Reset all margins, padding, and borders */
         * {
             margin: 0;
             padding: 0;
@@ -23,16 +23,7 @@
             font-weight: bold;
             text-align: center;
             color: #d32f2f;
-        }
-
-        .details, .description, .rating {
-            line-height: 1.8;
-            font-size: 16px;
-            text-align: center;
-        }
-
-        .details strong, .description strong, .rating strong {
-            color: #333;
+            margin: 20px 0;
         }
 
         .poster {
@@ -41,26 +32,18 @@
         }
 
         .poster img {
-            width: 200px;
+            width: 150px; /* Smaller poster size */
+            border-radius: 8px;
         }
 
-        .screenshot-container {
+        .details, .description, .rating {
+            line-height: 1.6;
+            font-size: 14px;
             text-align: center;
-            position: relative;
-            margin-top: 20px;
         }
 
-        .screenshot-title {
-            font-size: 24px;
-            font-weight: bold;
-            color: #fff;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        .screenshot img {
-            width: 100%;
-            cursor: pointer;
+        .details strong, .description strong, .rating strong {
+            color: #333;
         }
 
         .download-section {
@@ -69,23 +52,43 @@
         }
 
         .download-button {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 8px 12px;
+            font-size: 12px; /* Smaller button text */
             text-decoration: none;
             color: #fff;
             background-color: #007bff;
-            font-weight: bold;
+            border-radius: 5px;
         }
 
         .download-button:hover {
             background-color: #0056b3;
         }
 
-        .disclaimer {
-            font-size: 14px;
-            color: #888;
+        .screenshot-container {
+            text-align: center;
             margin-top: 20px;
+        }
+
+        .screenshot-title {
+            font-size: 18px; /* Smaller title */
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .screenshot img {
+            width: 80%; /* Smaller screenshot size */
+            max-width: 300px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .disclaimer {
+            font-size: 12px;
+            color: #888;
+            margin: 20px;
             text-align: justify;
         }
     </style>
@@ -94,7 +97,7 @@
     <div class="title">🔥 Pushpa 2 - The Rule 🌟</div>
 
     <div class="poster">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFp9OGWYlyi-DmfTsMmtDCac3gP8VaWohSn7zCj8exDw6U6g_Jx4dCoytGjhmlifM7-X4_quzxIWM3iqT_28-ve-fqv9eEL9TQ4kwFEvjVnBLZ2a_sebdCIGx1KK09VHx9BCbxuHGzJOmdb97gwfz4LFl7HjSNqD2_1opJUCk8VvYsvOSVVyOQ8vAQRf1u/s523/1000024189.jpg" alt="Pushpa 2 Poster" style="width: 200px; border-radius: 8px;">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFp9OGWYlyi-DmfTsMmtDCac3gP8VaWohSn7zCj8exDw6U6g_Jx4dCoytGjhmlifM7-X4_quzxIWM3iqT_28-ve-fqv9eEL9TQ4kwFEvjVnBLZ2a_sebdCIGx1KK09VHx9BCbxuHGzJOmdb97gwfz4LFl7HjSNqD2_1opJUCk8VvYsvOSVVyOQ8vAQRf1u/s523/1000024189.jpg" alt="Pushpa 2 Poster">
     </div>
 
     <div class="details">
@@ -103,50 +106,29 @@
         <strong>⏰ Duration:</strong> 3h 42m <br>
         <strong>⭐ Release Date:</strong> 2024 <br>
         <strong>🎞️ Size:</strong> 740MB, 1GB, 2GB, 3.6GB, 5.6GB HDRip <br>
-        <strong>🎬 Starcast:</strong> Allu Arjun, Akshay Kumar, Rashmika Mandanna, Fahadh Faasil, Mohanlal, Prakash Raj, Sai Pallavi, Jagapathi Babu, Sunil, Parth Siddhpura, Dayanand Reddy, Koushik Mahata, Rajsekhar Aningi, Md Ariful Islam, Al Yasaha Naim, Kamal Teja Narla, Alam Saha
+        <strong>🎬 Starcast:</strong> Allu Arjun, Rashmika Mandanna, Akshay Kumar, and more.
     </div>
 
     <div class="description">
-        <strong>📝 Movie Description:</strong>  
+        <strong>📝 Description:</strong>  
         The rivalry between red sandalwood smuggler Pushpa (Allu Arjun) and the ruthless police officer Bhanwar Singh Shekhawat (Fahad Faasil) continues in the sequel.
-    </div>
-
-    <div class="rating">
-        <strong>🌟 IMDb Rating:</strong> 8.5/10 <br>
-        <strong>📊 User Rating:</strong> 4.5/5
     </div>
 
     <div class="download-section">
         <strong>📥 Download Links:</strong> <br>
-        <a href="https://new1.filesdl.site/cloud/NUY1KMngJD" target="_blank" rel="nofollow" class="download-button">📂 480P 740MB 🔗</a>
-        <a href="https://new1.filesdl.site/cloud/V8tx4NrXHS" target="_blank" rel="nofollow" class="download-button">📂 720P 1.21GB 🔗</a>
-        <a href="https://new1.filesdl.site/cloud/uzcRaD8g79" target="_blank" rel="nofollow" class="download-button">📂 720P [HD] 2GB 🔗</a>
-        <a href="https://new1.filesdl.site/cloud/6aV0cYrXJC" target="_blank" rel="nofollow" class="download-button">📂 1080P (HEVC) 3.1GB 🔗</a>
-        <a href="https://new1.filesdl.site/cloud/WMw02Hhd9N" target="_blank" rel="nofollow" class="download-button">📂 1080P (HD) 4.42GB 🔗</a>
-        <a href="https://new1.filesdl.site/cloud/btCWDMTuep" target="_blank" rel="nofollow" class="download-button">📂 1080P (FHD) 8.21GB 🔗</a>
+        <a href="https://new1.filesdl.site/cloud/NUY1KMngJD" target="_blank" rel="nofollow" class="download-button">480P 740MB</a>
+        <a href="https://new1.filesdl.site/cloud/V8tx4NrXHS" target="_blank" rel="nofollow" class="download-button">720P 1.21GB</a>
+        <a href="https://new1.filesdl.site/cloud/uzcRaD8g79" target="_blank" rel="nofollow" class="download-button">720P [HD] 2GB</a>
+        <a href="https://new1.filesdl.site/cloud/6aV0cYrXJC" target="_blank" rel="nofollow" class="download-button">1080P (HD) 4.42GB</a>
     </div>
 
-    <!-- Screenshot Section -->
     <div class="screenshot-container">
-        <div class="screenshot-title">📸 Screenshot</div>
-        <div class="screenshot" onmousedown="showContent()" ontouchstart="showContent()">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUBp2oQdDuj701_vlfzWi7oA4TecfhJJ13pD5IbLtbyNYYvQzqVQtQYfTF6qogvHJIDt4Z8NTRFJ8tVSYOihqHx_yKsMwDsgdZD4pfj6aWCvI-tcJjGfEt4i3YHVKkVp1TGAh7XTcYEaEMLchYaVcWBZBLMkSv_gXGrQyhNBKRxy0VQxmuCc4UwSVzDbjR/s2560/1000024211.jpg" alt="Pushpa 2 Screenshot">
-        </div>
+        <div class="screenshot-title">📸 Screenshots</div>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUBp2oQdDuj701_vlfzWi7oA4TecfhJJ13pD5IbLtbyNYYvQzqVQtQYfTF6qogvHJIDt4Z8NTRFJ8tVSYOihqHx_yKsMwDsgdZD4pfj6aWCvI-tcJjGfEt4i3YHVKkVp1TGAh7XTcYEaEMLchYaVcWBZBLMkSv_gXGrQyhNBKRxy0VQxmuCc4UwSVzDbjR/s2560/1000024211.jpg" alt="Screenshot">
     </div>
 
     <div class="disclaimer">
-        <strong>⚠️ Disclaimer:</strong>  
-        This post is for informational purposes only. We do not host or promote any copyrighted content. Please ensure compliance with local copyright laws before downloading.
+        <strong>⚠️ Disclaimer:</strong> This post is for informational purposes only. We do not host or promote copyrighted content.
     </div>
-
-    <script>
-        function showContent() {
-            var content = document.querySelector('.screenshot-content');
-            content.style.display = 'flex';
-            setTimeout(function() {
-                content.style.display = 'none';
-            }, 3000); // Hide the content after 3 seconds
-        }
-    </script>
 </body>
 </html>
