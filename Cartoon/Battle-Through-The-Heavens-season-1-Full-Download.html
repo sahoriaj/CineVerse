@@ -38,16 +38,35 @@
             background-color: #ffebcd;
             padding: 15px;
             border-radius: 8px;
+            text-align: center;
         }
         .download-link {
-            color: #1e90ff;
+            display: inline-block;
+            background-color: #1e90ff;
+            color: white;
             text-decoration: none;
-            font-size: 18px;
-            margin: 5px 0;
-            display: block;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            animation: pulse 1.5s infinite;
         }
         .download-link:hover {
-            text-decoration: underline;
+            background-color: #4682b4;
+            transform: scale(1.1) rotate(5deg);
+        }
+        /* Pulse animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
         .poster {
             display: block;
@@ -55,6 +74,13 @@
             max-width: 300px;
             margin: 20px auto;
             border-radius: 8px;
+        }
+        .details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .details ul li {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -66,7 +92,7 @@
 
     <div class="content">
         <div class="poster">
-            <img src="BTTHs1.jpg" alt="Battle Through The Heavens Poster">
+            <img src="Movies/Cartoon/BTTHO1.jpg" alt="Battle Through The Heavens Poster">
         </div>
 
         <div class="description">
@@ -99,8 +125,7 @@
 
         <div class="download-section">
             <h3>⬇️ **Download Option** ⬇️</h3>
-            <p>Click below to download the full season in **1080p HD**:</p>
-
+            <p>Click the button below to download the full season in **1080p HD**:</p>
             <a class="download-link" href="#">Download BTTH S1 Full Season (1080p)</a>
         </div>
     </div>
