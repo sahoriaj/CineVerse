@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Pushpa 2 - The Rule</title>
     <style>
-        /* Reset all margins, padding, and borders */
+        /* Reset all margins, padding, and border for the body and all elements */
         * {
             margin: 0;
             padding: 0;
@@ -16,34 +16,54 @@
         body {
             background-color: #f9f9f9;
             font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 10px;
         }
 
         .title {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
             text-align: center;
             color: #d32f2f;
-            margin: 20px 0;
-        }
-
-        .poster {
-            text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .poster img {
-            width: 150px; /* Smaller poster size */
+            width: 100%;
+            max-width: 250px;
             border-radius: 8px;
+            margin: 0 auto;
+            display: block;
         }
 
         .details, .description, .rating {
-            line-height: 1.6;
-            font-size: 14px;
+            line-height: 1.8;
+            font-size: 10px;
             text-align: center;
+            margin: 10px 0;
         }
 
         .details strong, .description strong, .rating strong {
             color: #333;
+        }
+
+        .screenshot-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .screenshot-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .screenshot img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            cursor: pointer;
         }
 
         .download-section {
@@ -53,43 +73,44 @@
 
         .download-button {
             display: inline-block;
-            margin: 5px 10px;
-            padding: 8px 12px;
-            font-size: 12px; /* Smaller button text */
+            margin: 10px 5px;
+            padding: 10px 15px;
             text-decoration: none;
             color: #fff;
             background-color: #007bff;
+            font-weight: bold;
             border-radius: 5px;
+            font-size: 14px;
         }
 
         .download-button:hover {
             background-color: #0056b3;
         }
 
-        .screenshot-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .screenshot-title {
-            font-size: 18px; /* Smaller title */
-            font-weight: bold;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        .screenshot img {
-            width: 80%; /* Smaller screenshot size */
-            max-width: 300px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
         .disclaimer {
-            font-size: 12px;
+            font-size: 14px;
             color: #888;
-            margin: 20px;
+            margin-top: 20px;
             text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 20px;
+            }
+
+            .details, .description, .rating {
+                font-size: 14px;
+            }
+
+            .download-button {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+
+            .screenshot img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -100,18 +121,26 @@
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFp9OGWYlyi-DmfTsMmtDCac3gP8VaWohSn7zCj8exDw6U6g_Jx4dCoytGjhmlifM7-X4_quzxIWM3iqT_28-ve-fqv9eEL9TQ4kwFEvjVnBLZ2a_sebdCIGx1KK09VHx9BCbxuHGzJOmdb97gwfz4LFl7HjSNqD2_1opJUCk8VvYsvOSVVyOQ8vAQRf1u/s523/1000024189.jpg" alt="Pushpa 2 Poster">
     </div>
 
-    <div class="details">
-        <strong>📂 Genre:</strong> Action, Crime, Drama <br>
-        <strong>🌐 Language:</strong> Hindi + Telugu (Dual Audio) <br>
-        <strong>⏰ Duration:</strong> 3h 42m <br>
-        <strong>⭐ Release Date:</strong> 2024 <br>
-        <strong>🎞️ Size:</strong> 740MB, 1GB, 2GB, 3.6GB, 5.6GB HDRip <br>
-        <strong>🎬 Starcast:</strong> Allu Arjun, Rashmika Mandanna, Akshay Kumar, and more.
-    </div>
+    <div class="movie-details"
+    <p>📂 <strong>Name</strong>:🔥 Pushpa 2 - The Rule 🌟</p>
+    <p>📂 <strong>Genre</strong>: Action, Crime, Drama</p>
+    <p>🌐 <strong>Language</strong>: Hindi + Telugu (Dual Audio)</p>
+    <p>⏰ <strong>Duration</strong>: 3h 42m</p>
+    <p>⭐ <strong>Release Date</strong>: 2024</p>
+    <p>🎞️ <strong>Size</strong>: 740MB, 1GB, 2GB, 3.6GB, 5.6GB HDRip</p>
+    <p>🎬 <strong>Starcast</strong>: Allu Arjun, Rashmika Mandanna, and more.</p>
+
+    <p>📝 <strong>Movie Description</strong>:  
+    The rivalry between red sandalwood smuggler Pushpa (Allu Arjun) and the ruthless police officer Bhanwar Singh Shekhawat (Fahadh Faasil) continues in the sequel.</p>
 
     <div class="description">
-        <strong>📝 Description:</strong>  
-        The rivalry between red sandalwood smuggler Pushpa (Allu Arjun) and the ruthless police officer Bhanwar Singh Shekhawat (Fahad Faasil) continues in the sequel.
+        <strong>📝 Movie Description:</strong>  
+        The rivalry between red sandalwood smuggler Pushpa (Allu Arjun) and the ruthless police officer Bhanwar Singh Shekhawat (Fahadh Faasil) continues in the sequel.
+    </div>
+
+    <div class="rating">
+        <strong>🌟 IMDb Rating:</strong> 8.5/10 <br>
+        <strong>📊 User Rating:</strong> 4.5/5
     </div>
 
     <div class="download-section">
@@ -119,16 +148,21 @@
         <a href="https://new1.filesdl.site/cloud/NUY1KMngJD" target="_blank" rel="nofollow" class="download-button">480P 740MB</a>
         <a href="https://new1.filesdl.site/cloud/V8tx4NrXHS" target="_blank" rel="nofollow" class="download-button">720P 1.21GB</a>
         <a href="https://new1.filesdl.site/cloud/uzcRaD8g79" target="_blank" rel="nofollow" class="download-button">720P [HD] 2GB</a>
-        <a href="https://new1.filesdl.site/cloud/6aV0cYrXJC" target="_blank" rel="nofollow" class="download-button">1080P (HD) 4.42GB</a>
+        <a href="https://new1.filesdl.site/cloud/6aV0cYrXJC" target="_blank" rel="nofollow" class="download-button">1080P HEVC 3.1GB</a>
+        <a href="https://new1.filesdl.site/cloud/WMw02Hhd9N" target="_blank" rel="nofollow" class="download-button">1080P HD 4.42GB</a>
+        <a href="https://new1.filesdl.site/cloud/btCWDMTuep" target="_blank" rel="nofollow" class="download-button">1080P FHD 8.21GB</a>
     </div>
 
     <div class="screenshot-container">
-        <div class="screenshot-title">📸 Screenshots</div>
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUBp2oQdDuj701_vlfzWi7oA4TecfhJJ13pD5IbLtbyNYYvQzqVQtQYfTF6qogvHJIDt4Z8NTRFJ8tVSYOihqHx_yKsMwDsgdZD4pfj6aWCvI-tcJjGfEt4i3YHVKkVp1TGAh7XTcYEaEMLchYaVcWBZBLMkSv_gXGrQyhNBKRxy0VQxmuCc4UwSVzDbjR/s2560/1000024211.jpg" alt="Screenshot">
+        <div class="screenshot-title">📸 Screenshot</div>
+        <div class="screenshot">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUBp2oQdDuj701_vlfzWi7oA4TecfhJJ13pD5IbLtbyNYYvQzqVQtQYfTF6qogvHJIDt4Z8NTRFJ8tVSYOihqHx_yKsMwDsgdZD4pfj6aWCvI-tcJjGfEt4i3YHVKkVp1TGAh7XTcYEaEMLchYaVcWBZBLMkSv_gXGrQyhNBKRxy0VQxmuCc4UwSVzDbjR/s2560/1000024211.jpg" alt="Pushpa 2 Screenshot">
+        </div>
     </div>
 
     <div class="disclaimer">
-        <strong>⚠️ Disclaimer:</strong> This post is for informational purposes only. We do not host or promote copyrighted content.
+        <strong>⚠️ Disclaimer:</strong>  
+        This post is for informational purposes only. We do not host or promote any copyrighted content. Please ensure compliance with local copyright laws before downloading.
     </div>
 </body>
 </html>
