@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /private/
+Disallow: /assets/
+Disallow: /images/
+
+Allow: /
+Sitemap: https://cineverse.linkpc.net/sitemap.xml
