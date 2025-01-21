@@ -6,8 +6,9 @@ const urls = [
   'https://cineverse.linkpc.net/',
   'https://cineverse.linkpc.net/about.html',
   'https://cineverse.linkpc.net/contact.html',
-  'https://cineverse.linkpc.net/post1',
-  'https://cineverse.linkpc.net/post2',
+  'https://cineverse.linkpc.net/video/movie/Pushpa-2-The-Rule.html',
+  'https://cineverse.linkpc.net/video/movie/Paatal-Lok-Season-2(2025).html',
+  'https://cineverse.linkpc.net/Cartoon/The-Girl-Downstairs.html',
   // Add more URLs for posts and pages
 ];
 
