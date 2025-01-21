@@ -26,12 +26,53 @@
 
   <!-- Example of a post page -->
   <url>
-    <loc>https://cineverse.linkpc.net/post1</loc>
+    <loc>https://cineverse.linkpc.net/privacy-policy.html</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
+ <url>
+    <loc>https://cineverse.linkpc.net/genre.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<url>
+    <loc>https://cineverse.linkpc.net/video/movie/Pushpa-2-The-Rule.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cineverse.linkpc.net/video/movie/Game-Changer-(2025).html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cineverse.linkpc.net/video/movie/Sorgavaasal-(2024).html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<url>
+    <loc>https://cineverse.linkpc.net/Cartoon/Battle-Through-The-Heavens-season-1-Full-Download.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cineverse.linkpc.net/Cartoon/The-Girl-Downstairs.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cineverse.linkpc.net/video/movie/Paatal-Lok-Season-2(2025).html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Add more URLs here for other posts or pages -->
   
 </urlset>
