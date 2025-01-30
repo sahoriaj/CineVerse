@@ -1055,6 +1055,112 @@
     <!-- APP SCRIPT -->
     <script src="app.js"></script>
 
+        <style>
+/* Fullscreen Popup Styling */
+#adblock-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 99999;
+    display: none; /* Hidden by default */
+}
+
+#adblock-popup img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#adblock-popup h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#adblock-popup p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#adblock-popup button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#adblock-popup button:hover {
+    background: darkred;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    function detectAdBlock(callback) {
+        let fakeAd = document.createElement('div');
+        fakeAd.className = 'adsbox';
+        fakeAd.style.position = 'absolute';
+        fakeAd.style.left = '-9999px';
+        fakeAd.style.width = '1px';
+        fakeAd.style.height = '1px';
+        document.body.appendChild(fakeAd);
+
+        setTimeout(() => {
+            if (fakeAd.offsetHeight === 0) {
+                callback(true); // AdBlock detected
+            } else {
+                callback(false); // No AdBlock
+            }
+            fakeAd.remove();
+        }, 100);
+    }
+
+    function getAdBlockerLogo() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        if (userAgent.includes("ublock")) {
+            return { name: "uBlock Origin", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3b/UBlock_Origin.svg" };
+        } else if (userAgent.includes("adblock") || userAgent.includes("adblocker")) {
+            return { name: "AdBlock", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Adblock_Logo.svg" };
+        } else if (userAgent.includes("adguard")) {
+            return { name: "AdGuard", logo: "https://upload.wikimedia.org/wikipedia/commons/4/42/AdGuard_Logo.svg" };
+        }
+        return { name: "Unknown AdBlocker", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d3/No_image_available.svg" };
+    }
+
+    detectAdBlock((isAdBlockEnabled) => {
+        if (isAdBlockEnabled) {
+            const adBlocker = getAdBlockerLogo();
+            let popup = document.createElement("div");
+            popup.id = "adblock-popup";
+            popup.innerHTML = `
+                <img src="${adBlocker.logo}" alt="${adBlocker.name}" />
+                <h2>AdBlock Detected</h2>
+                <p>You are using <strong>${adBlocker.name}</strong>. Please disable AdBlock to support our site.</p>
+                <button id="reload-page">I Disabled AdBlock</button>
+            `;
+            document.body.appendChild(popup);
+            popup.style.display = "flex"; // Show popup
+
+            document.getElementById("reload-page").addEventListener("click", function () {
+                location.reload(); // Reload page after AdBlock is disabled
+            });
+        }
+    });
+});
+</script>
+
+
 </body>
 
 </html>
